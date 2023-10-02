@@ -2,7 +2,18 @@
 name = "coption"
 version = "0.1.0"
 edition = "2021"
+description = "a const-generics / adt-const-param compatible Option alternative"
+documentation = "https://docs.rs/coption"
+homepage = "https://github.com/haennes/coption"
+repository = "https://github.com/haennes/coption"
+license = "GPL-3.0-only"
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[features]
+default = ["self_rust_tokenize"]
+self_rust_tokenize = []
+
 [dependencies]
+self-rust-tokenize = "0.3.*"
